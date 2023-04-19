@@ -515,7 +515,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .Maincon .Leftcon .infocon i{
@@ -742,7 +742,7 @@ html {
     }
 
     .Botombar .itemcon i {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .Botombar .itemcon a {
@@ -756,7 +756,7 @@ html {
     }
 
     .Botombar .itemcon .title {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 0px;
     }
 

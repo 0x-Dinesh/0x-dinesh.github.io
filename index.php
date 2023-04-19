@@ -1,0 +1,343 @@
+<?php
+if (isset($_POST['Send'])) {
+    $Name =  $_POST['Name'];
+    $Email = $_POST["Email"];
+    $Message = $_POST['Message'];
+
+    require_once "PHPMailer/PHPMailer.php";
+    require_once "PHPMailer/SMTP.php";
+    require_once "PHPMailer/Exception.php";
+
+    $mail = new PHPMailer\PHPMailer\PHPMailer();
+
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";
+    $mail->SMTPAuth = true;
+    $mail->Username = "dineshmurugan278@gmail.com";
+    $mail->Password = "lcgjwffeimjiguri";
+    $mail->Port = 465;
+    $mail->SMTPSecure = "ssl";
+    
+    $mail->isHTML(true);
+    $mail->setFrom($Email, $Name);
+    $mail->addAddress("Dineshmurugan278@gmail.com");
+    $mail->Subject = ("$Email ($Message)");
+    $mail->Body = $Message;
+    $mail->send();
+
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c94bcdc42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+
+
+    <!-- Navbar Starts-->
+    <div class="topbar">
+        <div class="namecon">
+            <h3 class="Name">Dinesh-<span class="devspan">(dev)</span></h3>
+            <div class="rightcon">
+                <div class="navbar" id="navbar">
+                    <a href="#Home">
+                        <p class="navitem">Home</p>
+                    </a>
+                    <a href="#About">
+                        <p class="navitem">About</p>
+                    </a>
+                    <a href="#Skills">
+                        <p class="navitem">Skills</p>
+                    </a>
+                    <a href="#Contactme">
+                        <p class="navitem">Contactme</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Botombar">
+        <div class="itemcon">
+            <a href="#Home">
+                <i class="fas fa-home"></i>
+                <p class="title">Home</p>
+            </a>
+        </div>
+        <div class="itemcon">
+            <a href="#About">
+                <i class="fas fa-address-card"></i>
+                <p class="title">About</p>
+            </a>
+        </div>
+        <div class="itemcon">
+            <a href="#Skills">
+                <i class="fas fa-brain"></i>
+                <p class="title">Skills</p>
+            </a>
+        </div>
+        <div class="itemcon">
+            <a href="#Contactme">
+                <i class="fas fa-paper-plane"></i>
+                <p class="title">Contact Me</p>
+            </a>
+        </div>
+    </div>
+    <!-- Navbar Ends-->
+
+
+
+    <!-- Home Starts -->
+
+    <div class="Home" id="Home">
+        <div class="page">
+            <div class="maincon">
+                <div class="leftcon">
+                    <p class="Name">Hi I'm Dinesh</p>
+                    <p class="roleim">I'm a <span class="role" id="role"></span></p>
+                    <p class="self">High leval experience in Full Stack development knowledge, producing quality work.
+                    </p>
+                </div>
+                <div class="rightcon">
+                    <div class="pic"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <a href="#About" class="sdbtncon">
+            <div class="sdbtn1">
+                <div class="vshape"></div>
+                <div class="vshape2"></div>
+            </div>
+        </a>
+    </div>
+    <!-- Home Ends -->
+
+    <!-- About Starts -->
+    <div class="About-main" id="About">
+        <div class="About page">
+            <h2 class="subtitle">About Me</h2>
+
+            <div class="maincon">
+                <div class="aboutleftcon">
+                    <div class="about-pic"></div>
+                </div>
+                <div class="aboutrightcon">
+                    <p class="about-self">
+                        Web developer, with extennseive knowledge and years of experience, working in web
+                        technologies
+                        and
+                        Ui/UX design, devlivering quality work.
+                    </p>
+
+                    <div class="moreinfocon">
+                        <div class="moreinfoitem">
+                            <div class="count">
+                                <h3>05+</h3>
+                            </div>
+                            <div class="countinfo">
+                                <h3>Month
+                                    experience</h3>
+                            </div>
+                        </div>
+                        <div class="moreinfoitem">
+                            <div class="count">
+                                <h3>02+</h3>
+                            </div>
+                            <div class="countinfo">
+                                <h3>Completed
+                                    Projects</h3>
+                            </div>
+                        </div>
+                        <div class="moreinfoitem">
+                            <div class="count">
+                                <h3>1+</h3>
+                            </div>
+                            <div class="countinfo">
+                                <h3>Companies
+                                    Worked</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#Skills" class="sdbtncon">
+            <div class="sdbtn1">
+                <div class="vshape"></div>
+                <div class="vshape2"></div>
+            </div>
+        </a>
+
+    </div>
+    <!-- About Ends -->
+
+
+    <div class="Skills" id="Skills">
+        <h2 class="subtitle">What I do</h2>
+
+        <div class="Skill-main">
+            <div class="Topcon">
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Html.png" alt="Html" class="skillimg">
+                    </div>
+                    <div class="skilltxt">HTML</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Css.png" alt="Css" class="skillimg">
+                    </div>
+                    <div class="skilltxt">CSS</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/JS.png" alt="Javascript" class="skillimg">
+                    </div>
+                    <div class="skilltxt">Java Script</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Bootstrap.png" alt="Boostrap" class="skillimg">
+                    </div>
+                    <div class="skilltxt">Boostrap</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/React native.png" alt="React Native" class="skillimg">
+                    </div>
+                    <div class="skilltxt">React Native</div>
+                </div>
+            </div>
+            <div class="Bottomcon">
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Python.png" alt="Python" class="skillimg">
+                    </div>
+                    <div class="skilltxt">Python</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Php.png" alt="PHP" class="skillimg">
+                    </div>
+                    <div class="skilltxt">PHP</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Mysql.png" alt="Mysql" class="skillimg">
+                    </div>
+                    <div class="skilltxt">Mysql</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Firebase.png" alt="Firebase" class="skillimg">
+                    </div>
+                    <div class="skilltxt">Firebase</div>
+                </div>
+                <div class="Skilitemcon">
+                    <div class="skillimg">
+                        <img src="./Assects/Aws.png" alt="AWS" class="skillimg">
+                    </div>
+                    <div class="skilltxt">AWS</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#Contactme" class="sdbtncon">
+            <div class="sdbtn1">
+                <div class="vshape"></div>
+                <div class="vshape2"></div>
+            </div>
+        </a>
+    </div>
+
+    <div class="Contactme" id="Contactme">
+        <h2 class="subtitle">Get in touch</h2>
+
+        <div class="Maincon">
+            <div class="Leftcon">
+                <div class="Itemcon">
+                    <h3 class="Title">Call Me</h3>
+                    <h4 class="Subtitle">+91 8940155977</h4>
+                </div>
+                <div class="Itemcon">
+                    <h3 class="Title">Email</h3>
+                    <h4 class="Subtitle">Dineshmurugan278@gmail.com</h4>
+                </div>
+                <div class="Itemcon">
+                    <h3 class="Title">Location</h3>
+                    <h4 class="Subtitle">Tittagudi - Cuddalore,Tamilnadu,India</h4>
+                </div>
+                <div class="Addinfo">
+                    <div class="cvbtncon">
+                        <a href="./Assects/cv.txt" download="file">
+                            <p class="btntxt">
+                                <i class="fas fa-address-card"></i>
+                                Download CV
+                            </p>
+                        </a>
+                    </div>
+                    <div class="wbbtncon">
+                        <a href="https://wa.me/+918940155977" target="_blank">
+                            <p class="btntxt">
+                                <i class="fab fa-whatsapp"></i>
+                                Whatsapp
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="Rightcon">
+                <form action="" method="post">
+                    <input type="text" name="Name" id="Name" placeholder="Name" class="Name">
+                    <br>
+                    <input type="email" name="Email" id="Email" placeholder="Email" class="Email">
+                    <br>
+                    <textarea name="Message" id="Message" rows="10" placeholder="Message" class="Message"></textarea>
+                    <br>
+                    <input type="submit" value='Send' class="Sendbtn" name="Send">
+                </form>
+            </div>
+        </div>
+        <div class="Gotopcon">
+            <a href="#Home">
+                <p class="text">
+                    <i class="fas fa-angle-double-up"></i>
+                    Getmetop
+                </p>
+            </a>
+
+        </div>
+        <div class="footer">
+            <p class="Text">Made by <span class="Name">Dinesh</span></p>
+        </div>
+    </div>
+
+
+    <script src="./Js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#role', {
+            strings: ['Web developer.', 'App developer.', 'Youtuber.'],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>

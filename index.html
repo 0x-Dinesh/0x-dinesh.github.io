@@ -37,7 +37,7 @@ if (isset($_POST['Send'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c94bcdc42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Css/style.css">
-    <title>Portfolio</title>
+    <title>Dinesh-Portfolio</title>
 </head>
 
 <body>
@@ -269,17 +269,28 @@ if (isset($_POST['Send'])) {
 
         <div class="Maincon">
             <div class="Leftcon">
-                <div class="Itemcon">
-                    <h3 class="Title">Call Me</h3>
-                    <h4 class="Subtitle">+91 8940155977</h4>
+                <div class="infocon">
+                    <i class="fas fa-user"></i>
+                    <div class="Itemcon">
+                        <h3 class="Title">Name</h3>
+                        <h4 class="Subtitle">Dinesh murugan</h4>
+                    </div>
                 </div>
-                <div class="Itemcon">
-                    <h3 class="Title">Email</h3>
-                    <h4 class="Subtitle">Dineshmurugan278@gmail.com</h4>
+
+                <div class="infocon">
+                    <i class="fas fa-envelope"></i>
+                    <div class="Itemcon">
+                        <h3 class="Title">Email</h3>
+                        <h4 class="Subtitle">Dineshmurugan278@gmail.com</h4>
+                    </div>
                 </div>
-                <div class="Itemcon">
-                    <h3 class="Title">Location</h3>
-                    <h4 class="Subtitle">Tittagudi - Cuddalore,Tamilnadu,India</h4>
+
+                <div class="infocon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="Itemcon">
+                        <h3 class="Title">Adders</h3>
+                        <h4 class="Subtitle">Tittagudi - Cuddalore,Tamilnadu,India</h4>
+                    </div>
                 </div>
                 <div class="Addinfo">
                     <div class="cvbtncon">
@@ -301,14 +312,12 @@ if (isset($_POST['Send'])) {
                 </div>
             </div>
             <div class="Rightcon">
-                <form action="" method="post">
-                    <input type="text" name="Name" id="Name" placeholder="Name" class="Name">
+                <form action="https://formspree.io/f/mrgvreoq" method="POST" id="my-form">
+                    <input type="email" name="email" id="Email" placeholder="Email" class="Email">
                     <br>
-                    <input type="email" name="Email" id="Email" placeholder="Email" class="Email">
+                    <textarea name="message" id="Message" rows="10" placeholder="Message" class="Message"></textarea>
                     <br>
-                    <textarea name="Message" id="Message" rows="10" placeholder="Message" class="Message"></textarea>
-                    <br>
-                    <input type="submit" value='Send' class="Sendbtn" name="Send">
+                    <input type="submit" value='Send' id="my-form-button" class="Sendbtn" name="Send">
                 </form>
             </div>
         </div>
@@ -336,6 +345,38 @@ if (isset($_POST['Send'])) {
             backSpeed: 60,
             loop: true
         });
+    </script>
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert("Thanks for your submission!")
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            alert("Oops! There was a problem submitting your form")
+                        }
+                    })
+                }
+            }).catch(error => {
+                alert("Oops! There was a problem submitting your form")
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
     </script>
 
 </body>

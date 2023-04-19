@@ -171,7 +171,7 @@ html {
     margin-left: 25%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdX2cywzI6czn3jsEQ9nNuDq1ULbKEEWdc2Q&usqp=CAU");
+    background-image: url("../Assects/Profile.png");
 }
 
 /* Home Ends*/
@@ -216,7 +216,7 @@ html {
     margin-left: 25%;
     height: 320px;
     border-radius: 20px;
-    background-image: url("https://avatars.githubusercontent.com/u/76168122?v=4");
+    background-image: url("../Assects/Profile.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -379,7 +379,8 @@ html {
 .Contactme .Maincon .Leftcon .Itemcon {
     /* border: 2px solid pink; */
     margin: 10px;
-    width: 50%;
+    width: 100%;
+    margin-left: 15px;
 }
 
 .Contactme .Maincon .Leftcon .Itemcon .Title {
@@ -509,7 +510,17 @@ html {
     text-decoration: none;
 }
 
+.Maincon .Leftcon .infocon {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.Maincon .Leftcon .infocon i{
+    font-size: 30px;
+}
 
 /* Contact Me Starts */
 

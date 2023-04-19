@@ -1,5 +1,4 @@
 <?php
-echo "Dinesh";
 if (isset($_POST['Send'])) {
     $Name =  $_POST['Name'];
     $Email = $_POST["Email"];

@@ -1,354 +1,466 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./assect/css/style.css">
+
+    <!-- Animated.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animated.css -->
+
+    <!-- Fontawasome -->
     <script src="https://kit.fontawesome.com/3c94bcdc42.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./Css/style.css">
-    <title>Dinesh-Portfolio</title>
+    <!-- Fontawasome -->
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 
 <body>
 
+    <!-- Nav-bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-nav fixed-top">
+            <div class="container navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Dinesh-<span class="brand-dev">(dev)</span> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+                        </ul>
+                        <ul class="navbar-nav d-flex" id="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home" id="a">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#about" id="a">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#portfolio" id="a">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#contact" id="a">Contact</a>
+                            </li>
+                        </ul>
 
-    <!-- Navbar Starts-->
-    <div class="topbar">
-        <div class="namecon">
-            <h3 class="Name">Dinesh-<span class="devspan">(dev)</span></h3>
-            <div class="rightcon">
-                <div class="navbar" id="navbar">
-                    <a href="#Home">
-                        <p class="navitem">Home</p>
-                    </a>
-                    <a href="#About">
-                        <p class="navitem">About</p>
-                    </a>
-                    <a href="#Skills">
-                        <p class="navitem">Skills</p>
-                    </a>
-                    <a href="#Contactme">
-                        <p class="navitem">Contactme</p>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <!-- Nav-bar -->
+    <main>
+        <!-- Home Container -->
+        <section class="home-con" id="home">
 
-    <div class="Botombar">
-        <div class="itemcon">
-            <a href="#Home">
-                <i class="fas fa-home"></i>
-                <p class="title">Home</p>
-            </a>
-        </div>
-        <div class="itemcon">
-            <a href="#About">
-                <i class="fas fa-address-card"></i>
-                <p class="title">About</p>
-            </a>
-        </div>
-        <div class="itemcon">
-            <a href="#Skills">
-                <i class="fas fa-brain"></i>
-                <p class="title">Skills</p>
-            </a>
-        </div>
-        <div class="itemcon">
-            <a href="#Contactme">
-                <i class="fas fa-paper-plane"></i>
-                <p class="title">Contact Me</p>
-            </a>
-        </div>
-    </div>
-    <!-- Navbar Ends-->
+            <div class="info-con" id="info-con">
+                <p class="name">Hi I'm Dinesh.</p>
+                <p class="role">I'm a <span class="des" id="role"></span></p>
+                <div class="social-con">
+                    <a href="https://www.linkedin.com/in/dinesh-murugan-750655284">
+                        <div class="round" id="round">
+                            <i class="fab fa-linkedin" id="Icon"></i>
+                        </div>
+                    </a>
 
+                    <a href="https://www.instagram.com/dinesh.0x__/">
+                        <div class="round" id="round">
+                            <i class="fab fa-instagram" id="Icon"></i>
+                        </div>
+                    </a>
 
+                    <a href="https://wa.me/918940155977">
+                        <div class="round" id="round">
+                            <i class="fab fa-whatsapp" id="Icon"></i>
+                        </div>
+                    </a>
 
-    <!-- Home Starts -->
+                    <a href="https://www.youtube.com/@d-codetamil9345">
+                        <div class="round" id="round">
+                            <i class="fab fa-youtube" id="Icon"></i>
+                        </div>
+                    </a>
 
-    <div class="Home" id="Home">
-        <div class="page">
-            <div class="maincon">
-                <div class="leftcon">
-                    <p class="Name">Hi I'm Dinesh</p>
-                    <p class="roleim">I'm a <span class="role" id="role"></span></p>
-                    <p class="self">High leval experience in Full Stack development knowledge, producing quality work.
-                    </p>
                 </div>
-                <div class="rightcon">
-                    <div class="pic"></div>
-                </div>
-
-
             </div>
-        </div>
-        <a href="#About" class="sdbtncon">
-            <div class="sdbtn1">
-                <div class="vshape"></div>
-                <div class="vshape2"></div>
+
+            <div class="bg-animation">
+                <img src="./assect/starts.svg" alt="" id="star" class="star">
+                <img src="./assect/round-1.svg" alt="" id="round-1" class="round-1">
+                <img src="./assect/round-2.svg" alt="" id="round-4" class="round-4">
+                <img src="./assect/round-3.svg" alt="" id="round-3" class="round-3">
+                <img src="./assect/roung-4.svg" alt="" id="round-2" class="round-2">
+                <img src="./assect/Illution.png" alt="" id="illution" class="illution">
             </div>
-        </a>
-    </div>
-    <!-- Home Ends -->
 
-    <!-- About Starts -->
-    <div class="About-main" id="About">
-        <div class="About page">
-            <h2 class="subtitle">About Me</h2>
 
-            <div class="maincon">
-                <div class="aboutleftcon">
-                    <div class="about-pic"></div>
-                </div>
-                <div class="aboutrightcon">
-                    <p class="about-self">
-                        Web developer, with extennseive knowledge and years of experience, working in web
-                        technologies
-                        and
-                        Ui/UX design, devlivering quality work.
-                    </p>
 
-                    <div class="moreinfocon">
-                        <div class="moreinfoitem">
-                            <div class="count">
-                                <h3>05+</h3>
-                            </div>
-                            <div class="countinfo">
-                                <h3>Month
-                                    experience</h3>
+        </section>
+        <!-- Home Container -->
+
+        <!-- About Container -->
+        <section class="About-con" id="about">
+            <h3 class="subtitle">About me</h3>
+            <div class="bio-con">
+                <div class="row bio-row-con">
+                    <div class="col-sm-5 mb-3 mb-sm-0">
+                        <div class="card card-1 animate__animated animate__fadeInLeft">
+                            <div class="card-body ">
+                                <img src="./assect/Profile.jpeg" class="pro-img" alt="">
                             </div>
                         </div>
-                        <div class="moreinfoitem">
-                            <div class="count">
-                                <h3>02+</h3>
+                    </div>
+                    <div class="col-sm-2 line-con">
+                        <div class="line"></div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="card card-2  animate__animated animate__fadeInRight">
+                            <div class="card2-body">
+                                <div class="card-body">
+                                    <p class="card-text">I am 18 year old tech enthusiast. I have done 5+ real-time
+                                        project
+                                        I am a freelancer, YouTuber. I am a self learn a person who likes to hear about
+                                        new
+                                        technologies. let's work together to make a tech revolution.</p>
+                                    <a href="#contact"><button type="button" class="btn btn-outline-primary">Contact <i
+                                                class="fas fa-arrow-down fa-xs"></i></button></a>
+
+                                </div>
                             </div>
-                            <div class="countinfo">
-                                <h3>Completed
-                                    Projects</h3>
-                            </div>
-                        </div>
-                        <div class="moreinfoitem">
-                            <div class="count">
-                                <h3>1+</h3>
-                            </div>
-                            <div class="countinfo">
-                                <h3>Companies
-                                    Worked</h3>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
 
+            <h3 class="subtitle">Skills</h3>
+            <div class="skill-con">
+                <button class="perv-btn" id="slideLeft">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+
+                <div class="hor-con" id="hor-con">
+
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-90">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <p class="skill-name">HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-90">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <p class="skill-name">Wordpress, Graphy</p>
+                    </div>
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-80">
+                            <div class="overlay">80%</div>
+                        </div>
+                        <p class="skill-name">Bootstrap</p>
+                    </div>
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-70">
+                            <div class="overlay">70%</div>
+                        </div>
+                        <p class="skill-name">React Native</p>
+                    </div>
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-80">
+                            <div class="overlay">80%</div>
+                        </div>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-80">
+                            <div class="overlay">80%</div>
+                        </div>
+                        <p class="skill-name">PHP</p>
+                    </div>
+
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-60">
+                            <div class="overlay">60%</div>
+                        </div>
+                        <p class="skill-name">Node.js</p>
+                    </div>
+
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-70">
+                            <div class="overlay">70%</div>
+                        </div>
+                        <p class="skill-name">Mysql</p>
+                    </div>
+
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-50">
+                            <div class="overlay">50%</div>
+                        </div>
+                        <p class="skill-name">Firebase</p>
+                    </div>
+
+                    <div class="skill-detail">
+                        <div class="radialProgressBar progress-40">
+                            <div class="overlay">40%</div>
+                        </div>
+                        <p class="skill-name">MongoDB</p>
+                    </div>
+
+
+                </div>
+
+                <button class="nxt-btn" id="slideRight"><i class="fas fa-angle-right"></i></button>
+
+            </div>
+        </section>
+        <!-- About Container -->
+
+        <!-- Portfolio Container -->
+        <section class="portfolio-con" id="portfolio">
+            <div class="work-con">
+                <h3 class="subtitle">My Works</h3>
+                <div class="work-item-con">
+                    <div class="card-group">
+                        <div class="card animate__animated animate__fadeInLeft">
+                            <img src="./assect/works/warlpix.jpg" alt="">
+                            <p class="work-name">Warlpix</p>
+                            <p class="work-dis">E-commerce</p>
+                        </div>
+                        <div class="card animate__animated animate__fadeInDown">
+                            <img src="./assect/works/matrimoney.png" alt="">
+                            <p class="work-name">azhagumatrimony</p>
+                            <p class="work-dis">other</p>
+                        </div>
+                        <div class="card animate__animated animate__fadeInRight">
+                            <img src="./assect/works/warlpix.jpg" alt="">
+                            <p class="work-name">Warlpix</p>
+                            <p class="work-dis">E-commerce</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Container -->
+
+        <!-- Contact Container -->
+        <section class="contact-con" id="contact">
+            <h3 class="subtitle">Get in touch</h3>
+            <div class="contact-info-con">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card card-left">
+                            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                type="module"></script>
+
+                            <div class="animi-con">
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/074f7b5b-1277-4dab-9e81-8f48b806be22/TOOmrZhmzb.json"
+                                    background="transparent" speed="1" style="width: 600px; height: 600px;" loop
+                                    autoplay></dotlottie-player>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card card-right">
+                            <form action="https://formspree.io/f/mrgvreoq" method="post">
+                                <div class="row-name-con">
+                                    <div class="form-item">
+                                        <input type="text" id="first-name" required>
+                                        <label for="first-name">First Name</label>
+                                    </div>
+                                    <div class="form-item">
+                                        <input type="text" id="last-name" required>
+                                        <label for="last-name">Last Name</label>
+                                    </div>
+
+                                </div>
+                                <div class="form-item">
+                                    <input type="email" id="first-name" name="email" required>
+                                    <label for="first-name">Email id</label>
+                                </div>
+                                <div class="form-item">
+                                    <textarea id="floatingTextarea2" style="height: 100px" class="message"
+                                        name="message" required row></textarea>
+                                    <label for="first-name">Message</label>
+                                </div>
+                                <button type="sybmit" class="btn btn-outline-danger submit-btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Container -->
+
+        <!-- Footer-Continer -->
+        <div class="footer-con">
+            <div class="con">
+                <div class="footer-item-co">
+                    <div class="con1 col-md-4">
+                        <span>Copyright 2023 - All Rights Reserved</span>
+                    </div>
+                    <div class="con2 col-md-4">
+                        <span>Designed by <span style="color: red;">Dinesh</span> </span>
+                    </div>
+                    <div class="con3 col-md-4">
+                        <div class="social-row-con">
+                            <a href="https://www.linkedin.com/in/dinesh-murugan-750655284">
+                                <div class="round">
+                                    <i class="fab fa-linkedin" id="Icon"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://www.instagram.com/dinesh.0x__/">
+                                <div class="round">
+                                    <i class="fab fa-instagram" id="Icon"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/918940155977">
+                                <div class="round">
+                                    <i class="fab fa-whatsapp" id="Icon"></i>
+                                </div>
+                            </a>
+
+                            <a href="https://www.youtube.com/@d-codetamil9345">
+                                <div class="round">
+                                    <i class="fab fa-youtube" id="Icon"></i>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <a href="#Skills" class="sdbtncon">
-            <div class="sdbtn1">
-                <div class="vshape"></div>
-                <div class="vshape2"></div>
-            </div>
-        </a>
-
-    </div>
-    <!-- About Ends -->
+        <!-- Footer-Continer -->
 
 
-    <div class="Skills" id="Skills">
-        <h2 class="subtitle">What I do</h2>
 
-        <div class="Skill-main">
-            <div class="Topcon">
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Html.png" alt="Html" class="skillimg">
-                    </div>
-                    <div class="skilltxt">HTML</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Css.png" alt="Css" class="skillimg">
-                    </div>
-                    <div class="skilltxt">CSS</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/JS.png" alt="Javascript" class="skillimg">
-                    </div>
-                    <div class="skilltxt">Java Script</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Bootstrap.png" alt="Boostrap" class="skillimg">
-                    </div>
-                    <div class="skilltxt">Boostrap</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/React native.png" alt="React Native" class="skillimg">
-                    </div>
-                    <div class="skilltxt">React Native</div>
-                </div>
-            </div>
-            <div class="Bottomcon">
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Python.png" alt="Python" class="skillimg">
-                    </div>
-                    <div class="skilltxt">Python</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Php.png" alt="PHP" class="skillimg">
-                    </div>
-                    <div class="skilltxt">PHP</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Mysql.png" alt="Mysql" class="skillimg">
-                    </div>
-                    <div class="skilltxt">Mysql</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Firebase.png" alt="Firebase" class="skillimg">
-                    </div>
-                    <div class="skilltxt">Firebase</div>
-                </div>
-                <div class="Skilitemcon">
-                    <div class="skillimg">
-                        <img src="./Assects/Aws.png" alt="AWS" class="skillimg">
-                    </div>
-                    <div class="skilltxt">AWS</div>
-                </div>
-            </div>
-        </div>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-        <a href="#Contactme" class="sdbtncon">
-            <div class="sdbtn1">
-                <div class="vshape"></div>
-                <div class="vshape2"></div>
-            </div>
-        </a>
-    </div>
-
-    <div class="Contactme" id="Contactme">
-        <h2 class="subtitle">Get in touch</h2>
-
-        <div class="Maincon">
-            <div class="Leftcon">
-                <div class="infocon">
-                    <i class="fas fa-user"></i>
-                    <div class="Itemcon">
-                        <h3 class="Title">Name</h3>
-                        <h4 class="Subtitle">Dinesh murugan</h4>
-                    </div>
-                </div>
-
-                <div class="infocon">
-                    <i class="fas fa-envelope"></i>
-                    <div class="Itemcon">
-                        <h3 class="Title">Email</h3>
-                        <h4 class="Subtitle">Dineshmurugan278@gmail.com</h4>
-                    </div>
-                </div>
-
-                <div class="infocon">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div class="Itemcon">
-                        <h3 class="Title">Adders</h3>
-                        <h4 class="Subtitle">Tittagudi - Cuddalore,Tamilnadu,India</h4>
-                    </div>
-                </div>
-                <div class="Addinfo">
-                    <div class="cvbtncon">
-                        <a href="./Assects/cv.txt" download="file">
-                            <p class="btntxt">
-                                <i class="fas fa-address-card"></i>
-                                Download CV
-                            </p>
-                        </a>
-                    </div>
-                    <div class="wbbtncon">
-                        <a href="https://wa.me/+918940155977" target="_blank">
-                            <p class="btntxt">
-                                <i class="fab fa-whatsapp"></i>
-                                Whatsapp
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="Rightcon">
-                <form action="https://formspree.io/f/mrgvreoq" method="POST" id="my-form">
-                    <input type="email" name="email" id="Email" placeholder="Email" class="Email">
-                    <br>
-                    <textarea name="message" id="Message" rows="10" placeholder="Message" class="Message"></textarea>
-                    <br>
-                    <input type="submit" value='Send' id="my-form-button" class="Sendbtn" name="Send">
-                </form>
-            </div>
-        </div>
-        <div class="Gotopcon">
-            <a href="#Home">
-                <p class="text">
-                    <i class="fas fa-angle-double-up"></i>
-                    Getmetop
-                </p>
-            </a>
-
-        </div>
-        <div class="footer">
-            <p class="Text">Made by <span class="Name">Dinesh</span></p>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 
 
-    <script src="./Js/script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#role', {
-            strings: ['Web developer.', 'App developer.', 'Youtuber.'],
+            strings: ['Web-developer.', 'App-developer.', 'Youtuber.', 'Freelancer.'],
             typeSpeed: 60,
             backSpeed: 60,
             loop: true
         });
     </script>
-    <script>
-        var form = document.getElementById("my-form");
 
-        async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    alert("Thanks for your submission!")
-                    form.reset()
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            alert("Oops! There was a problem submitting your form")
-                        }
-                    })
-                }
-            }).catch(error => {
-                alert("Oops! There was a problem submitting your form")
-            });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const buttonRight = document.getElementById('slideRight');
+        const buttonLeft = document.getElementById('slideLeft');
+
+        buttonRight.onclick = function () {
+            document.getElementById('hor-con').scrollLeft += 500;
+        };
+        buttonLeft.onclick = function () {
+            document.getElementById('hor-con').scrollLeft -= 500;
+        };
+    </script>
+
+    <script>
+        let star = document.getElementById('star');
+        let round1 = document.getElementById('round-1');
+        let round4 = document.getElementById('round-4');
+        let round2 = document.getElementById('round-2');
+        let round3 = document.getElementById('round-3');
+        let illution = document.getElementById('illution');
+        let infocon = document.getElementById('info-con');
+
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            window.addEventListener("scroll", function () {
+                let value = window.scrollY;
+                star.style.bottom = value + "px";
+                round1.style.height = 250 + - value * 0.35 + "px";
+                round1.style.width = 250 + - value * 0.35 + "px";
+                round2.style.height = 50 + - value * 0.35 + "px";
+                round2.style.width = 50 + - value * 0.35 + "px";
+                round3.style.height = 100 + - value * 0.35 + "px";
+                round3.style.width = 100 + - value * 0.35 + "px";
+                round4.style.height = 250 + - value * 0.35 + "px";
+                round4.style.width = 250 + - value * 0.35 + "px";
+                illution.style.height = 180 + - value * 0.35 + "px";
+                illution.style.width = 180 + - value * 0.35 + "px";
+                infocon.style.top = -value * 2 + "px";
+            })
+        } else {
+            window.addEventListener("scroll", function () {
+                let value = window.scrollY;
+                star.style.left = value * 0.15 + "px";
+                round1.style.height = 300 + - value * 0.35 + "px";
+                round1.style.width = 300 + - value * 0.35 + "px";
+                round2.style.height = 100 + - value * 0.35 + "px";
+                round2.style.width = 100 + - value * 0.35 + "px";
+                round3.style.height = 250 + - value * 0.35 + "px";
+                round3.style.width = 250 + - value * 0.35 + "px";
+                round4.style.height = 280 + - value * 0.35 + "px";
+                round4.style.width = 280 + - value * 0.35 + "px";
+                illution.style.height = 200 + - value * 0.35 + "px";
+                illution.style.width = 200 + - value * 0.35 + "px";
+                infocon.style.top = -value * 2 + "px";
+            })
         }
-        form.addEventListener("submit", handleSubmit)
+    </script>
+
+
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const sectionId = entry.target.id;
+
+                if (entry.isIntersecting) {
+                    // Remove 'active' class from all links
+                    navLinks.forEach(link => link.classList.remove('active'));
+
+                    // Add 'active' class to the corresponding link
+                    const activeLink = document.querySelector(`nav a[href="#${sectionId}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
     </script>
 
 </body>

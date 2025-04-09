@@ -1,450 +1,616 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Portfolio</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio - Dinesh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="./assect/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <!-- Animated.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Animated.css -->
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-    <!-- Fontawasome -->
-    <script src="https://kit.fontawesome.com/3c94bcdc42.js" crossorigin="anonymous"></script>
-    <!-- Fontawasome -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/aos.css">
 
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-    <!-- Nav-bar -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-nav fixed-top">
-            <div class="container navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Dinesh - <span class="brand-dev">(Dev)</span> </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        </ul>
-                        <ul class="navbar-nav d-flex" id="nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home" id="a">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="#about" id="a">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="#portfolio" id="a">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="#contact" id="a">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- Nav-bar -->
-    <main>
-        <!-- Home Container -->
-        <section class="home-con" id="home">
-
-            <div class="info-con" id="info-con">
-                <p class="name">Hi I'm Dinesh.</p>
-                <p class="role">I'm a <span class="des" id="role"></span></p>
-                <div class="social-con">
-                    <p class="slogan">From concept to creation, we shape ideas into extraordinary design. Elevating
-                        aesthetics, one
-                        stroke at a time.</p>
-                </div>
-            </div>
-
-            <div class="bg-animation">
-                <img src="./assect/starts.svg" alt="" id="star" class="star">
-                <img src="./assect/round-1.svg" alt="" id="round-1" class="round-1">
-                <img src="./assect/round-2.svg" alt="" id="round-4" class="round-4">
-                <img src="./assect/round-3.svg" alt="" id="round-3" class="round-3">
-                <img src="./assect/roung-4.svg" alt="" id="round-2" class="round-2">
-                <img src="./assect/Illution.png" alt="" id="illution" class="illution">
-            </div>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Dinesh <span class="text-primary"> - (dev)</span></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-        </section>
-        <!-- Home Container -->
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img"
+							style="background-image:url(images/bg_1.png); height:500px; width: 500px">
+							<div class="overlay">
+							</div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Dinesh Murugan</span></h1>
+								<h2 class="mb-4">A Freelance Full Stack Developer</h2>
+								<p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
+										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <!-- About Container -->
-        <section class="About-con" id="about">
-            <h3 class="subtitle">About me</h3>
-            <div class="bio-con">
-                <div class="row bio-row-con">
-                    <div class="col-sm-5 mb-3 mb-sm-0">
-                        <div class="card card-1 animate__animated animate__fadeInLeft">
-                            <div class="card-body ">
-                                <img src="./assect/Profile.jpeg" class="pro-img" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 line-con">
-                        <div class="line"></div>
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="card card-2  animate__animated animate__fadeInRight">
-                            <div class="card2-body">
-                                <div class="card-body">
-                                    <p class="card-text">I am 19 year old tech enthusiast. Visionary forward thinking
-                                        Full Stack Developer. Always seeking creative challenges to deliver out of the
-                                        box innovative constant. I seek challenging opportunities where I fully use my
-                                        skills for success of organization. </p>
-                                    <a href="#contact"><button type="button" class="btn btn-outline-primary">Contact <i
-                                                class="fas fa-arrow-down fa-xs"></i></button></a>
+			<!-- <div class="slider-item">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm a <span>Full Stack Developer</span> based in London</h1>
+			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div> -->
+		</div>
+	</section>
 
-                                </div>
-                            </div>
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/Profile.png);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<!-- <p>A small river named Duden flows by their place and supplies it with the necessary
+								regelialia.</p> -->
+							<ul class="about-info mt-5 px-md-0 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Dinesh Murugan</span></li>
+								<li class="d-flex"><span>Date of birth:</span> <span>April 18, 2005</span></li>
+								<li class="d-flex"><span>Address:</span> <span>Cuddalore, Tamilnadu, India -
+										606111</span></li>
+								<!-- <li class="d-flex"><span>Zip code:</span> <span>1000</span></li> -->
+								<li class="d-flex"><span>Email:</span> <span>dineshmurugan278@gmail.com</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>+91 8940155977</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number" data-number="15">0</span>
+								<span>Project complete</span>
+							</p>
+							<p><a href="./Resume.pdf" download class="btn btn-primary py-3 px-3">Download CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+						is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
+				</div>
+			</div>
+			<div class="mb-5">
+				<h4 class="text-primary font-weight-800 text-center font-weight-bold"><u>Experience</u></h4>
+				<p>An EEE student who somehow fell in love with coding more than circuits. Over
+					time, I started exploring how websites are built, how apps work, and even how hackers think. That
+					curiosity turned into projects, internships, and a real passion for tech.
+					<br>
+					I enjoy building clean and responsive websites, crafting mobile apps, and learning how to make the
+					internet a safer place. I’ve worked as a full stack developer intern and also explored the world of
+					ethical hacking.
+				</p>
+			</div>
+			<div class="mb-5">
+				<h4 class="text-primary font-weight-800 text-center font-weight-bold mb-5"><u>Experience</u></h4>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">Full Stack Developer Intern</span>
+							<h2>Karyoun Innovation Pvt. Ltd., Chennai</h2>
+							<span class="position">(Jan 2023 – Apr 2023)</span>
+						</div>
+					</div>
 
-            <h3 class="subtitle">Skills</h3>
-            <div class="skill-con">
-                <button class="perv-btn" id="slideLeft">
-                    <i class="fas fa-angle-left"></i>
-                </button>
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">Ethical Hacking Intern</span>
+							<h2>Karyoun Innovation Pvt. Ltd., Chennai</h2>
+							<span class="position">(Aug 2022 – Dec 2022)</span>
+						</div>
 
-                <div class="hor-con" id="hor-con">
+					</div>
+				</div>
+				<div class="row justify-content-center mt-5">
+					<div class="col-md-6 text-center ftco-animate">
+						<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+					</div>
+				</div>
+			</div>
 
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-90">
-                            <div class="overlay">90%</div>
-                        </div>
-                        <p class="skill-name">HTML5, CSS3</p>
-                    </div>
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-90">
-                            <div class="overlay">90%</div>
-                        </div>
-                        <p class="skill-name">Bootstrap</p>
-                    </div>
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-80">
-                            <div class="overlay">80%</div>
-                        </div>
-                        <p class="skill-name">Figma</p>
-                    </div>
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-70">
-                            <div class="overlay">70%</div>
-                        </div>
-                        <p class="skill-name">Networking</p>
-                    </div>
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-80">
-                            <div class="overlay">80%</div>
-                        </div>
-                        <p class="skill-name">Python</p>
-                    </div>
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-80">
-                            <div class="overlay">80%</div>
-                        </div>
-                        <p class="skill-name">C / C++</p>
-                    </div>
+		</div>
+	</section>
 
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-60">
-                            <div class="overlay">60%</div>
-                        </div>
-                        <p class="skill-name">Java</p>
-                    </div>
-
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-70">
-                            <div class="overlay">70%</div>
-                        </div>
-                        <p class="skill-name">Mysql</p>
-                    </div>
-
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-50">
-                            <div class="overlay">50%</div>
-                        </div>
-                        <p class="skill-name">Firebase</p>
-                    </div>
-
-                    <div class="skill-detail">
-                        <div class="radialProgressBar progress-40">
-                            <div class="overlay">40%</div>
-                        </div>
-                        <p class="skill-name">MongoDB</p>
-                    </div>
-
-
-                </div>
-
-                <button class="nxt-btn" id="slideRight"><i class="fas fa-angle-right"></i></button>
-
-            </div>
-        </section>
-        <!-- About Container -->
-
-        <!-- Portfolio Container -->
-        <section class="portfolio-con" id="portfolio">
-            <div class="work-con">
-                <h3 class="subtitle">My Works</h3>
-                <div class="work-item-con">
-                    <div class="card-group">
-                        <div class="card animate__animated animate__fadeInLeft">
-                            <img src="./assect/works/amazon.png" alt="">
-                            <p class="work-name">Amazon Internship</p>
-                            <p class="work-dis">Quality Assurance Engineer/Tester</p>
-                        </div>
-                        <div class="card animate__animated animate__fadeInDown">
-                            <img src="./assect/works/naanmudhalvan.jpg" alt="">
-                            <p class="work-name">Naan Mudhalvan</p>
-                            <p class="work-dis"> <br>
-                                • Networking Essentials <br>
-                                • Artificial Intelligence</p>
-                        </div>
-                        <div class="card animate__animated animate__fadeInRight">
-                            <img src="./assect/works/dev.jpg" alt="">
-                            <p class="work-name">Programing Skills</p>
-                            <p class="work-dis">• Java <br>
-                                • Python <br>
-                                • C programming <br>
-                                • HTML and CSS</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Container -->
-
-        <!-- Contact Container -->
-        <section class="contact-con" id="contact">
-            <h3 class="subtitle">Get in touch</h3>
-            <div class="contact-info-con">
-                <div class="row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card card-left">
-                            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                                type="module"></script>
-
-                            <div class="animi-con">
-                                <script
-                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                                    type="module"></script>
-
-                                <dotlottie-player
-                                    src="https://lottie.host/074f7b5b-1277-4dab-9e81-8f48b806be22/TOOmrZhmzb.json"
-                                    background="transparent" speed="1" style="width: 600px; height: 600px;" loop
-                                    autoplay></dotlottie-player>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card card-right">
-                            <form action="https://formspree.io/f/mrgvreoq" method="post">
-                                <div class="row-name-con">
-                                    <div class="form-item">
-                                        <input type="text" id="first-name" required>
-                                        <label for="first-name">First Name</label>
-                                    </div>
-                                    <div class="form-item">
-                                        <input type="text" id="last-name" required>
-                                        <label for="last-name">Last Name</label>
-                                    </div>
-
-                                </div>
-                                <div class="form-item">
-                                    <input type="email" id="first-name" name="email" required>
-                                    <label for="first-name">Email id</label>
-                                </div>
-                                <div class="form-item">
-                                    <textarea id="floatingTextarea2" style="height: 100px" class="message"
-                                        name="message" required row></textarea>
-                                    <label for="first-name">Message</label>
-                                </div>
-                                <button type="sybmit" class="btn btn-outline-danger submit-btn">Send</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Container -->
-
-        <!-- Footer-Continer -->
-        <div class="footer-con">
-            <div class="con">
-                <div class="footer-item-co">
-                    <div class="con1 col-md-4">
-                        <span>Copyright 2023 - All Rights Reserved</span>
-                    </div>
-                    <div class="con2 col-md-4">
-                        <span>Designed by <span style="color: red;">Dinesh</span> </span>
-                    </div>
-                    <div class="con3 col-md-4">
-                        <div class="social-row-con">
-                            <a href="https://www.linkedin.com/in/dinesh-murugan-750655284">
-                                <div class="round">
-                                    <i class="fab fa-linkedin" id="Icon"></i>
-                                </div>
-                            </a>
-
-                            <a href="https://www.instagram.com/dinesh.0x__/">
-                                <div class="round">
-                                    <i class="fab fa-instagram" id="Icon"></i>
-                                </div>
-                            </a>
-
-                            <a href="https://wa.me/918940155977">
-                                <div class="round">
-                                    <i class="fab fa-whatsapp" id="Icon"></i>
-                                </div>
-                            </a>
-
-                            <a href="https://www.youtube.com/@d-codetamil9345">
-                                <div class="round">
-                                    <i class="fab fa-youtube" id="Icon"></i>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer-Continer -->
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Services</h1>
+					<h2 class="mb-4">Services</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Web Design</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Web Developer</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">App Developing</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-
-    </main>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
-
-
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#role', {
-            strings: ['Developer.', 'Web Designer', 'Youtuber'],
-            typeSpeed: 60,
-            backSpeed: 60,
-            loop: true
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
-
-    <script>
-        const buttonRight = document.getElementById('slideRight');
-        const buttonLeft = document.getElementById('slideLeft');
-
-        buttonRight.onclick = function () {
-            document.getElementById('hor-con').scrollLeft += 500;
-        };
-        buttonLeft.onclick = function () {
-            document.getElementById('hor-con').scrollLeft -= 500;
-        };
-    </script>
-
-    <script>
-        let star = document.getElementById('star');
-        let round1 = document.getElementById('round-1');
-        let round4 = document.getElementById('round-4');
-        let round2 = document.getElementById('round-2');
-        let round3 = document.getElementById('round-3');
-        let illution = document.getElementById('illution');
-        let infocon = document.getElementById('info-con');
-
-        if (window.matchMedia("(max-width: 768px)").matches) {
-            window.addEventListener("scroll", function () {
-                let value = window.scrollY;
-                star.style.bottom = value + "px";
-                round1.style.height = 250 + - value * 0.35 + "px";
-                round1.style.width = 250 + - value * 0.35 + "px";
-                round2.style.height = 50 + - value * 0.35 + "px";
-                round2.style.width = 50 + - value * 0.35 + "px";
-                round3.style.height = 100 + - value * 0.35 + "px";
-                round3.style.width = 100 + - value * 0.35 + "px";
-                round4.style.height = 250 + - value * 0.35 + "px";
-                round4.style.width = 250 + - value * 0.35 + "px";
-                illution.style.height = 180 + - value * 0.35 + "px";
-                illution.style.width = 180 + - value * 0.35 + "px";
-                infocon.style.top = -value * 2 + "px";
-            })
-        } else {
-            window.addEventListener("scroll", function () {
-                let value = window.scrollY;
-                star.style.left = value * 0.15 + "px";
-                round1.style.height = 300 + - value * 0.35 + "px";
-                round1.style.width = 300 + - value * 0.35 + "px";
-                round2.style.height = 100 + - value * 0.35 + "px";
-                round2.style.width = 100 + - value * 0.35 + "px";
-                round3.style.height = 250 + - value * 0.35 + "px";
-                round3.style.width = 250 + - value * 0.35 + "px";
-                round4.style.height = 280 + - value * 0.35 + "px";
-                round4.style.width = 280 + - value * 0.35 + "px";
-                illution.style.height = 200 + - value * 0.35 + "px";
-                illution.style.width = 200 + - value * 0.35 + "px";
-                infocon.style.top = -value * 2 + "px";
-            })
-        }
-    </script>
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Skills</h1>
+					<h2 class="mb-4">My Skills</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Tailwind</h3>
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>React.Js</h3>
+						<div class="progress">
+							<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="width:85%">
+								<span>85%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>React Native</h3>
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100" style="width:95%">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Laravel</h3>
+						<div class="progress">
+							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Ethical Hacking</h3>
+						<div class="progress">
+							<div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Networking</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-    <script>
-        const navLinks = document.querySelectorAll('nav a');
-        const sections = document.querySelectorAll('section');
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Our Projects</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="block-20" style="background-image: url('images/eliita.jpeg');">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const sectionId = entry.target.id;
+							</div>
+							<h3 class="heading">Elitta
+							</h3>
+							<p>Built the backend for an EdTech website, handling user authentication, course APIs, and
+								database operations to support seamless learning experiences.</p>
+						</div>
+					</div>
+				</div>
 
-                if (entry.isIntersecting) {
-                    // Remove 'active' class from all links
-                    navLinks.forEach(link => link.classList.remove('active'));
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="block-20" style="background-image: url('images/plc.png');">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
 
-                    // Add 'active' class to the corresponding link
-                    const activeLink = document.querySelector(`nav a[href="#${sectionId}"]`);
-                    if (activeLink) {
-                        activeLink.classList.add('active');
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
+							</div>
+							<h3 class="heading">Pacific Link College RAK Campus
+							</h3>
+							<p>Developed and delivered a responsive college website using WordPress, showcasing academic
+								programs, admission info, and campus details for Pacific Link College’s RAK branch.</p>
+						</div>
+					</div>
+				</div>
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="block-20" style="background-image: url('images/doi.jpeg');">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+
+							</div>
+							<h3 class="heading">DOI academy
+							</h3>
+							<p>Worked on a backend system for generating and managing DOIs (Digital Object Identifiers)
+								for academic journals. Built secure APIs and automated DOI assignment workflows.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="block-20" style="background-image: url('images/journal-2.jpeg');">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+
+							</div>
+							<h3 class="heading">Chendurph Journal
+							</h3>
+							<p>Built and maintained the backend for a journal publishing platform — handling article
+								submissions, editorial workflow, and user management for Chendurph Journal.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<div class="block-20" style="background-image: url('images/tucko.png');">
+						</div>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+
+							</div>
+							<h3 class="heading">Tucko Food Delivery App
+							</h3>
+							<p>Developed a full-featured food delivery app with restaurant listings, real-time cart
+								updates, and order tracking — delivering a smooth experience for both customers and
+								admins.</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="20">0</strong>
+							<span>Complete Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="20">0</strong>
+							<span>Happy Customers</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="15">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>I'm <span>Available</span> for freelancing</h2>
+					<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+
+					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Cuddalore, Tamilnadu, India - 606111</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://+91 8940155977">+91 8940155977</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:dineshmurugan278@gmail.com">dineshmurugan278@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row no-gutters block-9">
+				<div class="col-md-6 order-md-last d-flex">
+					<form class="bg-light p-4 p-md-5 contact-form" action="https://formspree.io/f/mrgvreoq"
+						method="post">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Name" name="name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Email" name="email">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Subject" name="subject">
+						</div>
+						<div class="form-group">
+							<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"
+								name="message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+						</div>
+					</form>
+
+				</div>
+
+				<div class="col-md-6 d-flex">
+					<div class="img" style="background-image: url(images/about.jpg);"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>A developer who loves turning ideas into working websites and apps.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="https://wa.me/918940155977" target="_blank"><span
+										class="icon-whatsapp"></span></a></li>
+							<li class="ftco-animate"><a href="www.linkedin.com/in/dinesh-murugan-25b555230"
+									target="_blank"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a
+									href="https://www.instagram.com/dinesh.0x__?igsh=YWo0dTZ5c2RpcHFh"
+									target="_blank"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>App Development</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Ethical Hacking</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">Cuddalore, Tamilnadu,
+										India - 606111</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+91
+											8940155977</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">dineshmurugan278@gmail.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved by Dinesh
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
 
 </body>
 
